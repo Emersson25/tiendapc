@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+ 
+    <div class="container">
+        <form class="mt-5">
+            
+            <!--control "compuesto" lo integran varios elementos-->
+            <div class="mb-3">
+            <label for="" class="form-label">Repositorio</label>
+            <div class="input-group">
+               <span class="input-group-text">https://github.com/</span> 
+               <input type="text" class="form-control">
+            </div>
+
+            <div class="form-text">Escriba la URL de su proyecto</div>
+
+            </div>
+            <!--Caja de texto pequeña-->
+            <div class="mb-3">
+                <label for="direccion" class="form-label">Direccion</label>
+                <input type="text" id="direccion" class="form-control form-control-lg">
+            </div>
+            <!--Caja de texto grande-->
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electronico</label>
+                <input type="text" id="email" class="form-control form-control-lg">
+            </div>
+            <!--Caja Autocompletado-->
+            <div class="mb-3">
+                <label for="lp" class="form-label">Lenguajes programacion</label>
+                 <input type="text" list="lenguajes" id="lp" class="form-control">
+                 <datalist id="lenguajes">
+                    <option value="PHP">
+                    <option value="Python">
+                    <option value="CSS">
+                    <option value="C#">
+                    <option value="Cobol">
+                    <option value="Javascript">
+                    <option value="Java">
+                 </datalist>
+            </div>
+            <!--Juguemos con los botones-->
+            <div class="mb-3">
+                <button type="button" class="btn btn-primary">Guardar datos</button>
+                <button type="button" class="btn btn-outline-primary">Guardar datos</button>
+                <button type="button" class="btn btn-primary btn-sm">Guardar datos</button>
+            </div>
+
+            <!-- d-grip ancho 100%, gap2, espacio interlineado-->
+            <div class="mb-3 d-grid gap-2">
+                <button type="button" class="btn btn-outline-secondary btn-sm">Proceso A</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm">Proceso B</button>
+            </div>
+            <!--Botones unidos / grupos-->
+            <div class="mb-3 btn-group" role="group">
+                <button type="button" class="btn btn-info">Guardar datos</button>
+                <button type="button" class="btn btn-info">Guardar datos</button>
+                <button type="button" class="btn btn-info">Guardar datos</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
